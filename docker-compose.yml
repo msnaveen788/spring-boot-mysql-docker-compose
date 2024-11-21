@@ -10,11 +10,12 @@ services:
       - mysqldb
     volumes:
       - /data/springboot-app
-    
   mysqldb:
     image: mysql:5.7
     networks:
       - springboot-db-net
+    ports:
+     - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=sbms
