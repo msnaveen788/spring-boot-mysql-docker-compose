@@ -11,7 +11,7 @@ services:
     volumes:
       - /data/springboot-app
   mysqldb:
-    image: mysql:5.7
+    image: mysql:8.0
     networks:
       - springboot-db-net
     ports:
