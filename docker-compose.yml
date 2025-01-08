@@ -10,6 +10,7 @@ services:
       - mysqldb
     volumes:
       - /data/springboot-app
+      
   mysqldb:
     image: mysql:8.0
     networks:
